@@ -16,7 +16,7 @@ import { FinalPageLocators } from '../../locators/finalPageLocators'
 import { FinalPage } from '../../pages/FinalPage'
 
 
-test.describe('CheckoutOverview Page Validation', () => {
+test.describe('Final Page Validation', () => {
     let loginPage
     let productPage
     let cartPage
@@ -52,7 +52,7 @@ test.describe('CheckoutOverview Page Validation', () => {
         await expect(elements.backHomeButton).toBeVisible()
     })
 
-    test('Valiadte the Success Message',async({page})=>
+    test('Valiadte the display success message',async({page})=>
     {
         const message = await finalPage.getSuccessMsg()
         console.log(message)
