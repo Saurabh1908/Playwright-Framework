@@ -59,7 +59,7 @@
          expect(message).toBe('Thank you for your order!')
      })
  
-     test('Validate the Back Home Functionality',async({page})=>
+     test('Validate the BackHome Functionality',async({page})=>
      {
          await finalPage.clickonBackHomeButton()
          await expect(page).toHaveURL('https://www.saucedemo.com/inventory.html')
