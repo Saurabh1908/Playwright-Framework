@@ -75,7 +75,7 @@ test.describe('Product Page Validation', () => {
 
     })
 
-    test.only('Filter By Price High to Low', async () => {
+    test('Filter By Price High to Low', async () => {
         await productPage.filterByHightoLow()
         const prices = await productPage.getProductPrices()
         const sortedPrices = [...prices].sort((a,b)=> b-a)
