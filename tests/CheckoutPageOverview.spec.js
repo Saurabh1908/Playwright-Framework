@@ -47,7 +47,7 @@ test.describe('CheckoutOverview Page Validation', () => {
 
     })
 
-    test.skip('Validate the Cancel Button Functionality', async ({ page }) => {
+    test('Validate the Cancel Button Functionality', async ({ page }) => {
         await checkoutPageOverview.clickOnCancel()
         await expect(page).toHaveURL('https://www.saucedemo.com/inventory.html')
     })
@@ -62,7 +62,7 @@ test.describe('CheckoutOverview Page Validation', () => {
 
     })
 
-    test.only('Validate Final Total(Itemtotal+Tax)',async({page})=>
+    test('Validate Final Total(Itemtotal+Tax)',async({page})=>
     {
         const itemtotal = await checkoutPageOverview.getItemtotal()
         const tax = await checkoutPageOverview.getItemTax()

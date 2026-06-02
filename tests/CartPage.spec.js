@@ -78,7 +78,7 @@ test.describe('Cart Page Validation', () => {
         await page.waitForTimeout(3000)
     })
 
-    test.only('Validate Remove Functionalty',async({page})=>
+    test('Validate Remove Functionalty',async({page})=>
     {
       await productPage.addAllProductsToCart()
       await page.waitForTimeout(4000)
