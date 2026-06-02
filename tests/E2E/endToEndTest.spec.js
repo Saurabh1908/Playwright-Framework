@@ -76,6 +76,13 @@
          await finalPage.clickonBackHomeButton()
          await expect(page).toHaveURL('https://www.saucedemo.com/inventory.html')
      })
+
+     test('Demo Test case3',async({page})=>
+     {
+         await finalPage.clickonBackHomeButton()
+         await expect(page).toHaveURL('https://www.saucedemo.com/inventory.html')
+     })
+ 
  
  
  })
